@@ -1,7 +1,10 @@
 @mixin h1-styling($font-size, $color, $margin-bottom) {
   h1 {
-    font-size: 25px
-    color: $navbar-text-color;
-    margin-bottom: $margin-bottom;
+    font-size: 25px $margin-bottom;
   }
+}
+@mixin floating($radius: 20px, $shadow: 0 10px 10px rgb(0 0 0 /0.1), $border: 1px solid transparent) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
 }

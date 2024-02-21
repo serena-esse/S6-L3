@@ -111,6 +111,7 @@
     width: 400px; /* Imposta la larghezza dell'immagine */
     margin-right: 20px; /* Aggiunge un margine a destra per separare l'immagine dal testo */
     border-radius: 8px;
+    @include floating(16px, 0 16px 36px rgb(0 0 0 / 0.3));
   }
 }
 
@@ -129,5 +130,6 @@
     height: auto; // Imposta l'altezza automaticamente in base alla larghezza per evitare distorsioni
     display: block; // Imposta l'immagine come blocco per gestire il padding correttamente
     border-radius: 8px;
+    @include floating(16px, 0 16px 36px rgb(0 0 0 / 0.3));
   }
 }
