@@ -1,0 +1,7 @@
+@mixin h1-styling($font-size, $color, $margin-bottom) {
+  h1 {
+    font-size: 25px
+    color: $navbar-text-color;
+    margin-bottom: $margin-bottom;
+  }
+}

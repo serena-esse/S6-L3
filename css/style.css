@@ -1,0 +1,18 @@
+/* Error: expected ";".
+ *   ,
+ * 4 |     color: $navbar-text-color;
+ *   |          ^
+ *   '
+ *   scss\_mixins.scss 4:10  @import
+ *   scss\style.scss 6:9     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a   \2577 \a 4 \2502      color: $navbar-text-color;\d\a   \2502           ^\a   \2575 \a   scss\\_mixins.scss 4:10  @import\a   scss\\style.scss 6:9     root stylesheet';
+}

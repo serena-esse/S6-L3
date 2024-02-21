@@ -1,0 +1,133 @@
+// Importa i file Sass necessari
+@import "animazioni";
+@import "bottoni";
+@import "colori";
+@import "font";
+@import "mixins";
+@import "reset";
+@import "spaziature";
+
+// Stili per la navbar
+.navbar {
+  background-color: $navbar-bg-color;
+  padding: $navbar-padding 0;
+  color: $navbar-text-color;
+
+  .navbar-brand {
+    width: 70px;
+
+    img {
+      width: 70px;
+      margin-left: 25px;
+    }
+  }
+
+  .navbar-nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      margin-right: 25px;
+      padding: 0;
+      text-align: right;
+
+      li {
+        display: inline-block;
+        margin-left: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $navbar-text-color;
+
+        &:hover {
+          color: $navbar-link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+// Stili per la sezione headline
+.headline {
+  background-color: $hero-color;
+  padding: 50px 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  @include h1-styling(24px, #ffffff, 20px);
+
+  p {
+    font-size: 18px;
+    color: $navbar-text-color;
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:nth-child(1) {
+        background-color: $primary-color;
+      }
+
+      &:nth-child(2) {
+        background-color: $secondary-color;
+      }
+
+      &:nth-child(3) {
+        background-color: $tertiary-color;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Stili per la sezione della griglia
+.container-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    width: 400px; /* Imposta la larghezza dell'immagine */
+    margin-right: 20px; /* Aggiunge un margine a destra per separare l'immagine dal testo */
+    border-radius: 8px;
+  }
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 25%; // Imposta la larghezza di ogni elemento al 25%
+  box-sizing: border-box; // Assicura che il padding e il bordo non aumentino la larghezza dell'elemento
+  padding: 10px; // Aggiunge spazio tra gli elementi
+
+  img {
+    width: 100%; // Rendi le immagini riempire completamente il loro contenitore
+    height: auto; // Imposta l'altezza automaticamente in base alla larghezza per evitare distorsioni
+    display: block; // Imposta l'immagine come blocco per gestire il padding correttamente
+    border-radius: 8px;
+  }
+}
